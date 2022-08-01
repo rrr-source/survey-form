@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <h1>The Amazing Survey Form</h1>
+        <div class="container">
+            <form action="form.html">
+                <label for="name">Name</label>
+                <input type="text" id="name" value="Name" name="name" placeholder="Your name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <label for="age">Age</label>
+                <input type="date" id="date" name="date" placeholder="Your age" required>
+                <label for="options">Which option best describes you?</label>
+                <select name="text" id="options">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <p>Would you recommend this to a friend?</p>
+                <label for="yes"><input type="radio" id="yes" name="any" value="text">Yes</label>
+                <label for="no"><input type="radio" id="no" name="any" value="text">No</label>
+                <label for="maybe"><input type="radio" id="maybe" name="any" value="text">Maybe</label>
+                <p>Languages and Frameworks known</p>
+                <label for="c"><input type="checkbox" id="c" name="c" value="C">C</label>
+                <label for="cplus"><input type="checkbox" id="cplus" name="cplus" value="Cplus">C++</label>
+                <label for="csharp"><input type="checkbox" id="csharp" name="csharp" value="Csharp">C#</label>
+                <label for="java"><input type="checkbox" id="java" name="java" value="Java">Java</label>
+                <label for="javascript"><input type="checkbox" id="javascript" name="javascript" value="Javascript">JavaScript</label>
+                <label for="pyhton"><input type="checkbox" id="pyhton" name="pyhton" value="Pyhton">Python</label>
+                <label for="react"><input type="checkbox" id="react" name="react" value="React">React</label>
+                <label for="angular"><input type="checkbox" id="angular" name="angular" value="Angular">Angular</label>
+                <label for="django"><input type="checkbox" id="django" name="django" value="Django">Django</label>
+                <p>Any comments or suggestions</p>
+                <textarea name="comment" id="comment" cols="50" rows="10" placeholder="Anything here"></textarea>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
